@@ -1,7 +1,10 @@
 /**
  * Melons - 5*50p
+ *
  * Apples - 2*10p
+ *
  * Fizzy drinks - 6*£1.20
+ *
  * Total in pence
  */
 
@@ -13,10 +16,10 @@ val total = melons + apples + fizzyDrinks
 
 //Task 1 - reassigning vals vs vars
 
-/**
- *val valName = "Eloise"
- *valName = "Ellie"
- * gives error :(
+/*
+ val valName = "Eloise"
+ valName = "Ellie"
+ gives error :(
  */
 
 var varName = "Eloise"
