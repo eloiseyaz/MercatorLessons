@@ -2,12 +2,12 @@
 
 ### MVP:
 1. Before coding, decide if the answer will be true or false and why, then use operators to store values
-   relating to the following:
-   a) Three plus four, times fifty-seven is less than three-hundred
-   b) One-hundred and forty-four, divided by 12 is greater than twelve or equal to twelve
-   c) Cat is less than Dog (strings)
-   d) Rabbit is less than Hamster (strings)
-   e) Seventeen is odd (modulus)
+   relating to the following: \
+   a) Three plus four, times fifty-seven is less than three-hundred \
+   b) One-hundred and forty-four, divided by 12 is greater than twelve or equal to twelve \
+   c) Cat is less than Dog (strings) \
+   d) Rabbit is less than Hamster (strings) \
+   e) Seventeen is odd (modulus) \
    f) Seventy-five divided by nine is less than thirty and eighty-nine divided by six is less than twenty
 2. What is the difference between a string (e.g. “I love scala already”) and a print line (e.g. println (“I
    love scala already”))?
