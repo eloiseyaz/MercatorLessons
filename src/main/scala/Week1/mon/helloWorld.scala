@@ -1,4 +1,4 @@
-package week1.mon
+package Week1.mon
 
 object helloWorld extends App {
 
