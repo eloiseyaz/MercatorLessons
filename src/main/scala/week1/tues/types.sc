@@ -18,13 +18,13 @@ val one: Int = 1
 val inferredOne = 1 //scala infers that it is an Int without us telling it
 
 
-//Task1
+//Task1 - creating values of different types
 
 val four: Int = 4
 val text: String = "hello"
 val yes: Boolean = true
 
-//Task2
+//Task2 - declaring wrong type
 
 /*
 val decimal: Int = 7.5
