@@ -1,5 +1,5 @@
 val a: Int = 3
-val b: Int = 1
+val b: Int = 3
 
 var myString: String = "" //I used a variable instead of a value so that I could print it outside the if statement.
 
@@ -11,3 +11,14 @@ if (a > b) {
   myString = "maybe"
 }
 println(myString)
+
+//Doing with vals
+
+val myValString = if (a > b) {
+  "yes"
+} else if (b > a) {
+  "no"
+} else {
+  "maybe"
+}
+println(myValString)
