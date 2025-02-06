@@ -1,7 +1,7 @@
 /**
  * Task 1
  *
- * The order of precedence is brackets, the arithmetic operators,eqaulities/inequalities (<, ==, etc.), logcial operators (! then && then ||) and then it is read from left to right.
+ * The order of precedence is brackets, the arithmetic operators, inequalities (<, >=, etc.), equals, not (! and !=), and (&&), or (||) and then it is read from left to right.
  */
 
 !(false && false) //a
@@ -27,3 +27,5 @@ false && true || true // same answer as e so && comes before || (also see task 2
 //Task 4
 (1 < 4 && 7 != 10 || 9 + 10 == 21) //True - it's equivalent to:
 (true && true || false) //which is true regardless of order
+
+//Scala order of operations listed here: https://docs.scala-lang.org/tour/operators.html
