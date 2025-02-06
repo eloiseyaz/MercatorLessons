@@ -83,7 +83,7 @@ val containsOrSeq: Boolean = filteredSeq.contains(7) || firstSeq.contains(12)
 /**Task 1 */
 
 //1
-val names: Seq[String] = Seq("Waris", "Nimo", "Doothea", "Sandra", "Lan", "Eloise", "April", "Ash", "Tudor", "Farnoosh")
+val names: Seq[String] = Seq("Waris", "Nimo", "Dorothea", "Sandra", "Lan", "Eloise", "April", "Ash", "Tudor", "Farnoosh")
 
 //2
 val colourMap: Map[Int, String] = Map(
