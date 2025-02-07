@@ -5,7 +5,7 @@
 2. Write a method to check if a number is odd. It should have an input parameter `Int` and
    return type `Boolean`.
 3. Using a for comprehension and your methods from MVP Q1 and Q2, write a method
-   called `sumOfOddNumbers` that has an input parameter of `List[Int]` and return type of `Int`.
+   called `sumOfSquaredOdds` that has an input parameter of `List[Int]` and return type of `Int`.
    This method should:
    * Will iterate over a `List` of `Int`s
    * Will square each `Int` in the `List`
@@ -14,13 +14,13 @@
 4. Make a simple grading system that calculates a student’s overall grade based on their
    scores in different subjects (Math, Science and English). The grades are given in the table below:
     
-    | Average Score | Grade |
-    |---------------|-------|
-    | 90+           | A     |
-    | 80-89         | B     |
-    | 70-79         | C     |
-    | 60-69         | D     |
-    | 0-59          | E     |
+    | Average Score (a)         | Grade |
+    |---------------------------|-------|
+    | a $\geqslant$ 90          | A     |
+    | 80 $\leqslant$ a $\lt$ 90 | B     |
+    | 70 $\leqslant$ a $\lt$ 80 | C     |
+    | 60 $\leqslant$ a $\lt$ 70 | D     |
+    | a $\lt$ 60                | E     |
     For example, if a student achieves 45 in Maths, 89 in
     History and 60 in science, the average score would be
     64.67 - they would average at a grade D overall.\
