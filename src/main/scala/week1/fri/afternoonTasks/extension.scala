@@ -1,6 +1,5 @@
 package week1.fri
 
-
 //Task 1 & 2
 object conversation extends App {
   var input = scala.io.StdIn.readLine()
