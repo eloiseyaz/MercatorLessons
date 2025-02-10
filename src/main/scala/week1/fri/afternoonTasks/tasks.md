@@ -22,7 +22,7 @@
     | 60 $\leqslant$ a $\lt$ 70 | D     |
     | a $\lt$ 60                | E     |
     For example, if a student achieves 45 in Maths, 89 in
-    History and 60 in science, the average score would be
+    History and 60 in Science, the average score would be
     64.67 - they would average at a grade D overall.\
     Your grading system will:
     * Calculate the average score from a list of scores.
