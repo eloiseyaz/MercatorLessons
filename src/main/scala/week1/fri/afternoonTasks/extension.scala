@@ -16,7 +16,7 @@ object conversation extends App {
     input = scala.io.StdIn.readLine()
   }
 }
-//unsure how to do this with vals instead of vars :/
+//unsure how to do this with vals instead of vars :/ - give this a try again separating into multiple methods in one object.  System.exit(0) will let you end the while loop
 
 //Task 3
 
