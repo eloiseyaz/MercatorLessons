@@ -10,6 +10,16 @@ def sumOfSquareOdds(intList: List[Int]): Int = (for {
   squaredOdds <- List(squares).filter(num => isOdd(num))
 } yield squaredOdds).sum
 
+//alt method
+def sumOddSquares(intList: List[Int]): Int = {
+  val oddSquares = for {
+    num <- intList
+    sqr = square(num)
+    if isOdd(sqr)
+  } yield sqr
+  oddSquares.sum
+}
+
 val myList: List[Int] = List(1, 2, 3, 4, 5)
 sumOfSquareOdds(myList)
 
