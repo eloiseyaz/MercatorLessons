@@ -1,0 +1,1 @@
+Abstract classes can take constructor arguments whereas traits cannot. Classes tend to be used when you are making "things" whereas traits are used for "behaviours".
