@@ -1,16 +1,16 @@
 ## Afternoon Task: Case classes and objects
 ### MVP:
 1. What are three main differences between a class and a case class?
-2. Without coding it, which of the following lines of code is runnable and which will produce an error? Then, code it and check!\
+2. Without coding it, which of the following lines of code is runnable and which will produce an error? Then, code it and check!
 * `case class Person(name: String, age: Int, nationality: String, isStudent: Boolean)`\
    a) `val firstPerson = new Person("Carlos", 23, "Spanish", true)`\
    b) `val secondPerson = Person("Carlos", 23, "Spanish", true)`\
-   c) `val thirdPerson = Person("Chloe", 25, "British", false)`\
+   c) `val thirdPerson = Person("Chloe", 25, "British", false)`
 * `class Animal(name: String, colour: String, pet: Boolean)`\
    d) `val cat = Animal("cat", "black", true)`\
    e) `val dog = new Animal("dog", "white", true)`
 3. After reviewing all combinations, which ones are true when compared using the `==`
-   operator? Once decided, code it and check!\
+   operator? Once decided, code it and check!
 * `case class Muffin(flavour: String, price: Double, storeBoughtFrom: String)`\
    a) `val chocolateMuffin = Muffin("chocolate", 3.50, "Mercator Bakery")`\
    b) `val blueberryMuffin = Muffin("blueberry", 3.50, "Mercator Bakery")`\
