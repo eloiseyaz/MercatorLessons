@@ -10,6 +10,7 @@ object LibraryLogic extends App{
   println(harryPotter.title)
   println(harryPotter.read)
   println(harryPotter.enjoy)
+  println(harryPotter)
 
   val goneGirl: Book = new Book("Gone Girl", new Adult(new Forename("Gillian"), new Surname("Flynn"))) with Thriller
   println(goneGirl.enjoy)
