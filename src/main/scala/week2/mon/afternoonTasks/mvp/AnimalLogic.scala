@@ -5,6 +5,6 @@ object AnimalLogic extends App {
   val snowyOwlYoungRange: ClassRange = new ClassRange(5, 11)
   val bird: AnimalClass = new AnimalClass("Bird")
   val species1: Species = new Species("Snowy Owl", "Vunerable", snowyOwlLifespanRange, snowyOwlYoungRange, bird)
-  val animal1: Animal = new Animal("Fluffy", 7, species1) with Flyable
+  val animal1: Animal = new Animal("Fluffy", 7, species1)
   println(animal1.name)
 }
