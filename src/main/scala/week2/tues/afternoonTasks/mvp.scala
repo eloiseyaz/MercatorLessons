@@ -13,7 +13,7 @@ object mvp extends App{
 
   /** Task 2 */
   case class Person(name: String, age: Int, nationality: String, isStudent: Boolean)
-  //a) Runnable - doesn't need the new but it still works
+  //a) Runnable - doesn't need the new, but it still works
   val firstPerson = new Person("Carlos", 23, "Spanish", true)
 
   //b) Runnable

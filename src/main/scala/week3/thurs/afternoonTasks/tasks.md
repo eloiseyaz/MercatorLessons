@@ -7,7 +7,7 @@
 * Use pattern matching.
 * Think about how you will deal with countries you have not included.
 * Think about what happens when someone has entered a country in all lowercase/
-  uppercase or mixed?
+uppercase or mixed?
 * Think about how you account for unneeded white spaces entered (e.g. " England ")?
 2.
 a) Create a sealed trait called ‘Animal’.
@@ -38,7 +38,7 @@ b) Create a method called horoscope. This method should accept a LocalDate and r
 
 ### Extension:
 1.
-a) Add `speciesName: String` as a parameter to your previously created animals from MVP Q2. e.g. A Whale could have the speciesName Blue whale, Fin Whale, Sei Whale...
+a) Add `speciesName: String` as a parameter to your previously created animals from MVP 2. e.g. A Whale could have the speciesName Blue whale, Fin Whale, Sei Whale...
 
 b) We are going to expand on our animal fact pattern match from MVP 2c.
 
@@ -51,7 +51,7 @@ Add if guards to your animal facts pattern match so that if the speciesName matc
 
 e.g. Rhino with the speciesName Black Rhino would include the fact and return "The Black Rhino is a critically endangered species".
 
-2. The answer to EXT Q1b using pattern matching is not exhaustive when using if guards. Can you make this method exhaustive for pattern matching?
+2. The answer to EXT 1b using pattern matching is not exhaustive when using if guards. Can you make this method exhaustive for pattern matching?
 ### Research:
 Run the method below and look at the output.\
 What is happening here?\
