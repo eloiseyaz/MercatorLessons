@@ -39,4 +39,42 @@ object PatternMatching extends App {
     case VoiceNote(sender, lengthOfBody) => println("Voice note from " + sender + ". Length: " + lengthOfBody)
   }
 
-}
+  //Task 1
+
+  val flavour: String = "sweet"
+
+  flavour match {
+    case "spicy" => println("Try American Hot!")
+    case "egg" => println("Try Florentine pizza!")
+    case "fish" => println("Try pizza Napoli!")
+    case x => println(s"I'm not sure what pizza is $x.")
+  }
+
+  //Task 2
+  //a
+  val pizzaSize: Int = 9
+  pizzaSize match {
+    case 7 => println("personal")
+    case 9 => println("small")
+    case 11 => println("medium")
+    case 14 => println("large")
+    case _ => println("Invalid pizza size")
+  }
+  //b
+  case class Pizza (size: Int, crust: String)
+  val pizzaOrder: Pizza = Pizza(7, "classic")
+  val getPrice = pizzaOrder match {
+    case Pizza(7, "classic") => 5.99
+    case Pizza(9, "classic") => 10.99
+    case Pizza(9, "italian") => 10.99
+    case Pizza(11, "classic") => 12.99
+    case Pizza(11, "italian") => 12.99
+    case Pizza(11, "stuffed") => 15.98
+    case Pizza(14, "classic") => 14.99
+    case Pizza(14, "italian") => 14.99
+    case Pizza(14, "stuffed") => 17.98
+  }
+  println(getPrice)
+  }
+
+
