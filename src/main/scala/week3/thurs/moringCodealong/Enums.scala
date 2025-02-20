@@ -24,6 +24,24 @@ object Enums extends App {
   println(BetterWeekday.values)
   println(BetterWeekday.Sunday)
 
+  //Pattern matching example
+  def matchWithEnum(weekdays: BetterWeekday.Value) = {
+    weekdays match {
+      case BetterWeekday.Monday => println(s"Oh, it's ${BetterWeekday.Monday}")
+      case BetterWeekday.Tuesday => println(s"Oh, it's ${BetterWeekday.Tuesday}")
+      case BetterWeekday.Wednesday => println(s"Oh, it's ${BetterWeekday.Wednesday}")
+      case BetterWeekday.Thursday => println(s"Oh, it's ${BetterWeekday.Thursday}")
+      case BetterWeekday.Friday => println(s"Oh, it's ${BetterWeekday.Friday}")
+      case BetterWeekday.Saturday => println(s"Oh, it's ${BetterWeekday.Saturday}")
+      case BetterWeekday.Sunday => println(s"Oh, it's ${BetterWeekday.Sunday}")
+    }
+  }
+
+  matchWithEnum(BetterWeekday.Saturday)
+
+  //We want an exhaustive match - all enums are assigned a match case.
+  //We don't see an error message/warning if it isn't.
+
   object ReorderedWeekday extends Enumeration {
     val Monday = Value(1)
     val Tuesday = Value(2)
