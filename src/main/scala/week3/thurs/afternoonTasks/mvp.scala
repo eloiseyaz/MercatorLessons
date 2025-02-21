@@ -120,7 +120,7 @@ object mvp extends App {
       case Gemini => "Be wary of those who say they're trustworthy."
       case Cancer => "An important person is coming into your life."
       case Leo => "Nurture your creativity and you will flourish."
-      case Virgo => "Bright opportunities lie "
+      case Virgo => "Bright opportunities lie."
       case Libra => "Be more present and live for the moment."
       case Scorpio => "An abundance of joy is on its way."
       case Sagittarius => "Think carefully before making rash decisions."

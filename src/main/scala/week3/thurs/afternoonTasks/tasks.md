@@ -44,8 +44,10 @@ b) We are going to expand on our animal fact pattern match from MVP 2c.
 
 Given the below list of endangered animals:
 
-`val criticallyEndangered: List[String] = List("Black Rhino", "African forest Elephant",
-"Orangutan", "Hawksbill Turtle", "Sunda Tiger", "Javan Rhino")`
+```scala
+val criticallyEndangered: List[String] = List("Black Rhino", "African forest Elephant",
+"Orangutan", "Hawksbill Turtle", "Sunda Tiger", "Javan Rhino")
+```
 
 Add if guards to your animal facts pattern match so that if the speciesName matches one in the above endangered species list, it should include the fact that the species is endangered.
 
@@ -53,6 +55,23 @@ e.g. Rhino with the speciesName Black Rhino would include the fact and return "T
 
 2. The answer to EXT 1b using pattern matching is not exhaustive when using if guards. Can you make this method exhaustive for pattern matching?
 ### Research:
-Run the method below and look at the output.\
+Run the method below and look at the output.
+
+```scala
+def checkListType[T](list: List[T]): String = list match {
+   case _: List[Double] => "List of Doubles"
+   case _: List[String] => "List of Strings"
+   case _: List[Int] => "List of Ints"
+   case _ => "Unknown"
+}
+
+val doubleList: List[Double] = List(1.0, 2.0, 3.0)
+val stringList: List[String] = List("1", "2", "3")
+val numList: List[Int] = List(1, 2, 3)
+
+checkListType(doubleList)
+checkListType(stringList)
+checkListType(numList)
+```
 What is happening here?\
 Is there any way to get around this and make the below method work as expected?
