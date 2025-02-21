@@ -1,4 +1,4 @@
-package week3.thurs.moringCodealong
+package week3.thurs.moringCodeAlong
 
 object Options extends App {
 
