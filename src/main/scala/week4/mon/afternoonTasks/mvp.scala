@@ -25,6 +25,7 @@ object mvp extends App {
   }
 
   //b
+  @tailrec
   def printableList(list: List[Any], acc: String = ""): String = {
     if (list == List()) acc
     else if (list.length == 1) printableList(list.tail, acc + list.head.toString)
@@ -42,7 +43,7 @@ object mvp extends App {
     case object England
     case object France
   }
-  val teamList = List(Team.Spain, Team.England, Team.France)
+  val teamList:List[Object] = List(Team.Spain, Team.England, Team.France)
   println(printableList(teamList))
   //longer to access so a bit annoying
 
@@ -66,6 +67,18 @@ object mvp extends App {
     case i if i < list.length => Right(list(i)%2==0)
     case i => Left(s"There is no position $i in the list.")
   }
-  println(isEven(30))
 
+  @tailrec
+  def isEvenRecursive(i: Int, nums: List[Int], acc: Boolean = false): Either[String, Boolean] = i match {
+    case i if i < 0 || i >= nums.length=> Left(s"There is no position $i in the list.")
+    case 0 => Right(acc)
+    case _ => isEvenRecursive(i-1, nums, !acc)
+  }
+
+  @tailrec
+  def isEvenRecursiveAgain(i: Int, nums: List[Int]): Either[String, Boolean] = i match {
+    case i if i < 0 || i >= nums.length=> Left(s"There is no position $i in the list.")
+    case 0 => Right(nums.head % 2 == 0)
+    case _ => isEvenRecursiveAgain(i-1, nums.tail)
+  }
 }
